@@ -1,0 +1,17 @@
+@mixin flex-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin background-style {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin red-text {
+  color: #ff003c;
+  text-shadow: 0 0 15px #ff003c;
+}

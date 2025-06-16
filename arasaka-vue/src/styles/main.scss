@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: #ff003c;
+  text-shadow: 0 0 15px #ff003c;
+}
+
+body {
+  background: #0b0b0b;
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 鼠标悬停时显示滚动条 */
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* 设置轨道背景为透明 */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(80%); /* 从下方开始 */
+    opacity: 0; /* 初始透明度为0 */
+  }
+  100% {
+    transform: translateY(0); /* 最终位置 */
+    opacity: 1; /* 最终透明度为1 */
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.7s ease-out forwards; /* 动画持续时间和缓动效果 */
+}
